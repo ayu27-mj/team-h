@@ -17,7 +17,6 @@
   margin: 0;
 }
 
-/* 見出しの下に短い線を引く */
 .ruled::after {
   content: "";
   display: block;
