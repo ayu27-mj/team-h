@@ -1,0 +1,23 @@
+:root {
+  --cafe-bg: #a88c7d; /* ページの背景 */
+  --cafe-main: #f4e8d8; /* ヘッダーや紹介欄の背景 */
+  --cafe-accent: #4f382e; /* ボタンや見出しの下線 */
+  --cafe-text: #000000; /* 本文の文字色 */
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--cafe-bg);
+  color: var(--cafe-text);
+  font-family: "Noto Serif JP", "Yu Mincho", serif;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.surface {
+  background-color: var(--cafe-main);
+}

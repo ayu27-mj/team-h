@@ -22,17 +22,41 @@
     <link rel="stylesheet" href="commitment.css" />
   </head>
 
-  <body>
-    <header>
+  <body id="top" class="d-flex flex-column min-vh-100">
+    　
+    <header
+      class="site-bar surface d-flex flex-wrap align-items-center justify-content-between"
+    >
       <a class="brand" href="#top">喫茶 こもれび</a>
 
-      <nav>
+      <nav class="site-nav d-flex flex-wrap gap-3" aria-label="navigation">
         <a href="#coffee">珈琲</a>
         <a href="#sweets">おやつ</a>
         <a href="#space">空間</a>
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <section id="hero" class="hero row g-0">
+        <div class="hero-text col-lg-5">
+          <h1 class="ruled" id="page-title">お店のこだわり</h1>
+
+          <p>
+            一杯の珈琲と、やさしいおやつ。<br />
+            窓辺に光が落ちる小さな喫茶店で、<br />
+            ふっと肩の力が抜けるひとときを。
+          </p>
+        </div>
+
+        <div class="hero-media col-lg-7">
+          <img
+            class="img-fluid w-100"
+            src="hero.jpg"
+            alt="コーヒー"
+            fetchpriority="high"
+          />
+        </div>
+      </section>
+    </main>
   </body>
 </html>
