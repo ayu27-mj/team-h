@@ -1,8 +1,8 @@
 :root {
-  --cafe-bg: #a88c7d; /* ページの背景 */
-  --cafe-main: #f4e8d8; /* ヘッダーや紹介欄の背景 */
-  --cafe-accent: #4f382e; /* ボタンや見出しの下線 */
-  --cafe-text: #000000; /* 本文の文字色 */
+  --cafe-bg: #a88c7d;
+  --cafe-main: #f4e8d8;
+  --cafe-accent: #4f382e;
+  --cafe-text: #000000;
 }
 
 html {
@@ -11,13 +11,53 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--cafe-bg);
-  color: var(--cafe-text);
   font-family: "Noto Serif JP", "Yu Mincho", serif;
+  background-color: var(--cafe-bg);
   font-size: 1rem;
+  color: var(--cafe-text);
   line-height: 1.9;
 }
 
+header,
 .surface {
   background-color: var(--cafe-main);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--cafe-text);
+}
+
+header a:hover,
+header a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+.global-nav {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.global-nav li {
+  list-style: none;
+}
+
+.global-nav [aria-disabled="true"] {
+  color: var(--cafe-accent);
+}
+
+footer {
+  background-color: var(--cafe-accent);
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 12px;
+  margin-top: auto;
+  width: 100%;
 }
