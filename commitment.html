@@ -17,6 +17,8 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
     />
 
     <link rel="stylesheet" href="style.css" />
@@ -24,15 +26,15 @@
   </head>
 
   <body class="d-flex flex-column min-vh-100">
-    <header
-      class="surface d-flex flex-wrap align-items-center justify-content-between gap-3 px-3 py-2"
-    >
-      <a class="fw-bold" href="index.html">Cafe Mellow</a>
-
-      <nav class="d-flex flex-wrap gap-3" aria-label="ページ内ナビゲーション">
-        <a href="#coffee">珈琲</a>
-        <a href="#sweets">おやつ</a>
-        <a href="#space">空間</a>
+    <header>
+      <nav>
+        <ul class="global-nav">
+          <li><a href="#">TOP</a></li>
+          <li><a href="menu.html">メニュー</a></li>
+          <li><a href="commitment.html">お店のこだわり</a></li>
+          <li><a href="event.html">イベント</a></li>
+          <li><a href="information.html">お店の紹介</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -59,12 +61,19 @@
       </section>
 
       <div class="container py-5">
+        <nav aria-label="目次" class="mb-4">
+          <ul class="list-unstyled d-flex flex-wrap gap-3 mb-0">
+            <li><a class="link-dark" href="#coffee">珈琲</a></li>
+            <li><a class="link-dark" href="#sweets">おやつ</a></li>
+            <li><a class="link-dark" href="#space">空間</a></li>
+          </ul>
+        </nav>
+
         <section id="coffee" class="surface rounded p-4 mb-4">
           <h2 class="ruled h4">珈琲</h2>
           <p class="mb-0">
             自家焙煎の珈琲豆を使用し、その日の気分に合わせて、
-            豆の種類や焙煎度合いを選べます。
-            こだわりの一杯をお楽しみください。
+            豆の種類や焙煎度合いを選べます。 こだわりの一杯をお楽しみください。
           </p>
         </section>
 
