@@ -6,6 +6,34 @@
     <link href="https://jsdelivr.net" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>お店の紹介</title>
+    <style>
+        h1 {
+        text-align: center;
+    }
+    .info-img {
+    display: block;
+    margin: 0 auto;
+    }
+
+    .info-layout {         /*← マップの紹介 */
+    display: flex;
+    gap: 50px;
+    padding: 0 11px;
+    margin-bottom: 50px;
+    }
+
+    .info-parking {        /*← 駐車場の紹介 */
+    display: flex;
+    gap: 50px;
+    padding: 0 11px;
+    margin-bottom: 50px;
+    }
+
+    main h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    </style>
 </head>
 <body>
     <header>
@@ -23,7 +51,7 @@
         <section>
             <h1>お店の案内</h1>
             <div class="info-layout">
-                <img src="map.png" alt="場所案内" class="info-img">
+                <img src="img/map.png" class="info-img">
                 <div>
                     <h3>店舗住所</h3>
                     <p>〒020-0021<br><a href="https://www.google.co.jp/maps/place/MCL%E7%9B%9B%E5%B2%A1%E6%83%85%E5%A0%B1%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%EF%BC%86%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E5%B0%82%E9%96%80%E5%AD%A6%E6%A0%A1+%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E6%83%85%E5%A0%B1%E9%A4%A8/@39.7047848,141.1402172,17z/data=!3m1!4b1!4m6!3m5!1s0x5f857630971ceb65:0xa71278d9c8f84080!8m2!3d39.7047807!4d141.1427921!16s%2Fg%2F1tfp2800!5m1!1e4?hl=ja&entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D">
@@ -38,7 +66,7 @@
             <h1>駐車場のご案内</h1>
             <h4>※【お車のお越しの方へ】以下の画像をご覧ください。</h4>
             <div class="info-parking">
-                <img src="parking.png" alt="駐車場のご案内" class="info-img">
+                <img src="img/parking.png" class="info-img">
                 <div>
                     <h3>店舗住所</h3>
                     <p>〒020-0021<br>岩手県盛岡市中央通3丁目2-17　（地図上の青いピン）</p>
