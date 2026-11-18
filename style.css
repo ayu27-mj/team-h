@@ -61,3 +61,39 @@ footer {
   margin-top: auto;
   width: 100%;
 }
+
+.info-img {
+  width: 50%;
+  width: 1000px;
+  height: 500px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.info-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.info-layout {
+  /*← マップの紹介 */
+  display: flex;
+  gap: 50px;
+  padding: 0 11px;
+  margin-bottom: 50px;
+}
+
+.info-parking {
+  /*← 駐車場の紹介 */
+  display: flex;
+  gap: 50px;
+  padding: 0 11px;
+  margin-bottom: 50px;
+}
+
+main h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
