@@ -1,43 +1,59 @@
-@charset "utf-8";
-
-body {
-    margin: 0;
-    font-family: sans-serif;
-    background: #A88C7D;
-    font-size: 16px;
-    color: #000;
+:root {
+  --cafe-bg: #a88c7d;
+  --cafe-main: #f4e8d8;
+  --cafe-accent: #4f382e;
+  --cafe-text: #000000;
 }
 
-header {
-    background: #F4E8D8;
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Serif JP", "Yu Mincho", serif;
+  background-color: var(--cafe-bg);
+  font-size: 1rem;
+  color: var(--cafe-text);
+  line-height: 1.9;
+}
+
+header,
+.surface {
+  background-color: var(--cafe-main);
 }
 
 header a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: var(--cafe-text);
+}
+
+header a:hover,
+header a[aria-current="page"] {
+  text-decoration: underline;
 }
 
 .global-nav {
-    padding: 15px;
-    display: flex;
-    justify-content: space-around;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
-    padding: 15px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .global-nav li {
-    list-style: none;
+  list-style: none;
 }
 
-.global-nav ul {
-    margin: 0;
-    padding: 0;
+.global-nav [aria-disabled="true"] {
+  color: var(--cafe-accent);
 }
 
 footer {
-  background-color: #4F382E;
+  background-color: var(--cafe-accent);
   text-align: center;
   padding: 10px 0;
   color: #fff;
@@ -47,7 +63,37 @@ footer {
 }
 
 .info-img {
-    width: 50%;
-    width: 1000px;
-    height: 500px;
+  width: 50%;
+  width: 1000px;
+  height: 500px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.info-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.info-layout {
+  /*← マップの紹介 */
+  display: flex;
+  gap: 50px;
+  padding: 0 11px;
+  margin-bottom: 50px;
+}
+
+.info-parking {
+  /*← 駐車場の紹介 */
+  display: flex;
+  gap: 50px;
+  padding: 0 11px;
+  margin-bottom: 50px;
+}
+
+main h4 {
+  text-align: center;
+  margin-bottom: 20px;
 }
