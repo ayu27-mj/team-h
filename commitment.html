@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>お店のこだわり | Cafe Mellow</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="commitment.css" />
+  </head>
+
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <nav aria-label="メインナビゲーション">
+        <ul class="global-nav">
+          <li><a href="index.html">TOP</a></li>
+          <li><span aria-disabled="true">メニュー</span></li>
+          <li>
+            <a href="commitment.html" aria-current="page">お店のこだわり</a>
+          </li>
+          <li><span aria-disabled="true">イベント</span></li>
+          <li><span aria-disabled="true">お店の紹介</span></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero row g-0">
+        <div class="hero-text col-lg-5">
+          <h1 class="ruled" id="page-title">お店のこだわり</h1>
+
+          <p>
+            一杯の珈琲と、やさしいおやつ。<br />
+            窓辺に光が落ちる小さな喫茶店で、<br />
+            ふっと肩の力が抜けるひとときを。
+          </p>
+        </div>
+
+        <div class="hero-media col-lg-7">
+          <img
+            class="img-fluid w-100"
+            src="hero.jpg"
+            alt="コーヒー"
+            fetchpriority="high"
+          />
+        </div>
+      </section>
+
+      <div class="container py-5">
+        <nav aria-label="目次" class="mb-4">
+          <ul class="list-unstyled d-flex flex-wrap gap-3 mb-0">
+            <li><a class="link-dark" href="#coffee">珈琲</a></li>
+            <li><a class="link-dark" href="#sweets">おやつ</a></li>
+            <li><a class="link-dark" href="#space">空間</a></li>
+          </ul>
+        </nav>
+
+        <div class="vstack gap-4">
+          <section
+            id="coffee"
+            class="row g-0 align-items-center surface rounded overflow-hidden"
+          >
+            <div class="commitment-copy col-7 p-4">
+              <h2 class="ruled">珈琲</h2>
+              <p class="mb-0">
+                自家焙煎の珈琲豆を使用し、その日の気分に合わせて、
+                豆の種類や焙煎度合いを選べます。
+                こだわりの一杯をお楽しみください。
+              </p>
+            </div>
+            <div class="col-5">
+              <img
+                class="img-fluid w-100 d-block"
+                src="img/commitment_coffee.jpg"
+                alt="ドリッパーにお湯を注いで珈琲を淹れる様子"
+                width="768"
+                height="512"
+                loading="lazy"
+              />
+            </div>
+          </section>
+
+          <section
+            id="sweets"
+            class="row g-0 align-items-center surface rounded overflow-hidden"
+          >
+            <div class="commitment-copy col-7 p-4">
+              <h2 class="ruled">おやつ</h2>
+              <p class="mb-0">
+                手作りの優しいおやつを提供しています。
+                季節のフルーツを使ったケーキや、しっとりとした焼き菓子など、
+                心温まる味わいをお楽しみください。
+              </p>
+            </div>
+            <div class="col-5">
+              <img
+                class="img-fluid w-100 d-block"
+                src="img/sweets.jpg"
+                alt="皿にのったレモンケーキ"
+                width="768"
+                height="512"
+                loading="lazy"
+              />
+            </div>
+          </section>
+
+          <section
+            id="space"
+            class="row g-0 align-items-center surface rounded overflow-hidden"
+          >
+            <div class="commitment-copy col-7 p-4">
+              <h2 class="ruled">空間</h2>
+              <p class="mb-0">
+                窓辺に光が差し込む、落ち着いた雰囲気の店内で、
+                ゆったりとした時間をお過ごしいただけます。
+                お一人でも、お友達とでも、くつろぎのひとときをお楽しみください。
+              </p>
+            </div>
+            <div class="col-5">
+              <img
+                class="img-fluid w-100 d-block"
+                src="img/space.jpg"
+                alt="窓から日が差し込む、木のテーブルが並ぶ店内"
+                width="768"
+                height="512"
+                loading="lazy"
+              />
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2026 Morijyobi. All rights reserved.</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
